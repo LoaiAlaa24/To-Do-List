@@ -9,8 +9,8 @@ with a simple pages frontend to login and to view the list.
 * Node.js v8+
 * Express.js v4
 * MongoDB
-* Angular4
-* Mocha and Chai
+* Angular6
+
 
 ## How to run?
 
