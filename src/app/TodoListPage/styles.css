@@ -1,0 +1,163 @@
+.page{
+
+  background-color: #3374BC;
+   height: 2000px; 
+   width: 100%; 
+   overflow: hidden;
+    position: sticky; 
+    margin: 0;
+   padding: 0;
+
+}
+
+.thingToDo{
+
+  margin-bottom: 80px;
+   margin-top:80px
+   ;margin-left: 80px;
+   height:50px;
+   width: 200px;
+
+}
+
+.list-type5{
+  width:410px;
+  margin:0 auto;
+  }
+  .list-type5 ol {
+  list-style-type: none;
+  list-style-type: decimal ;
+  margin: 0;
+  margin-left: 1em;
+  padding: 0;
+  counter-reset: li-counter;
+  }
+  .list-type5 ol li{
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: 0.5em;
+  background-color: #F0D756;
+  padding-left: 58px;
+  }
+  
+  .list-type5 a{
+  text-decoration:none;
+  color:black;
+  font-size:15px;
+  font-family: 'Raleway', sans-serif;
+  }
+  
+  .list-type5 li:hover{
+  box-shadow:inset -1em 0 #6CD6CC;
+  -webkit-transition: box-shadow 0.5s; 
+  transition: box-shadow 0.5s;
+  }
+  
+  .list-type5 ol li:before {
+  position: absolute;
+  top: -0.3em;
+  left: -0.5em;
+  width: 1.8em;
+  height: 1.2em;
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #6CD6CC;
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  z-index: 99;
+  overflow: hidden;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  }
+  
+  input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+ .add {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #F0D756;
+    width: 100px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .logout{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #F0D756;
+    width: 100px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+  .done {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #F0D756;
+    text-transform: uppercase;
+    width: 60px;
+    border: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    float: right; 
+    margin-right: 30px;
+     height: 30px; 
+     transform: translateY(-8px)
+  }
+
+  @media screen and (max-width: 800px) {
+    .list-type5{
+      width: 75%; 
+    }
+    .thingToDo{
+
+      margin-bottom: 80px;
+       margin-top:50px;
+       margin-left: 35px;
+       height:45px;
+       width: 150px;
+    
+    }
+    .add {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background: #F0D756;
+      width: 60px;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+    }
+  }

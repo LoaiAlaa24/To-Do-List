@@ -1,0 +1,17 @@
+
+
+<html class="page">
+<div class="login-page" >
+ <img src="assets/payme.png" style="width: 300px; " alt="Logo">
+    <div class="form" >
+
+      <form  class="login-form" [formGroup]="profileForm" #myform="ngForm" (ngSubmit)="login()">
+        
+        <input type="text" formControlName="username" placeholder="username"/>
+        <input type="password" formControlName="password" placeholder="password"/>
+        <button>login / create new account</button>
+        <label style="margin: 20px;">{{response}}</label>
+      </form>
+    </div>
+  </div>
+</html>

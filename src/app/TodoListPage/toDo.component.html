@@ -1,0 +1,20 @@
+
+
+<html class="page" >
+<div style="align-content: center;">
+  <button class="logout" (click)="logout()">logout</button>
+<div class="list-type5">
+  <form [formGroup]="dataForm" #myform="ngForm" (ngSubmit)="addTodo()" >
+    <input type="text" formControlName="dataEntered"  placeholder="Things To Do" class="thingToDo" />
+    <button class="add">add  </button>
+  </form>
+<ol>
+    <li *ngFor="let todoItem of todoList">
+      {{ todoItem }}
+      <button class="done" (click)= done(todoItem) > Done </button>
+    </li>
+    
+  </ol>
+</div>
+</div>  
+</html> -->
